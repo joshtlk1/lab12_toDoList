@@ -1,19 +1,9 @@
+	'use strict';
+
 	var gulp = require('gulp');
 	var browserSync = require('browser-sync');
 	var concat = require('gulp-concat');
 	var Sass = require('gulp-sass');
-
-	gulp.task('default', function() {
-		console.log("is this the real life?")
-	});
-
-	gulp.task('rhapsody',['default'], function(){
-		console.log('is this just fantasy?');
-	});
-
-	gulp.task('landslide', ['rhapsody'], function() {
-		console.log('caught in a landslide');
-	});
 
 	gulp.task('browser-sync', function() {
 		browserSync.init({
@@ -32,7 +22,6 @@
 		.pipe(gulp.dest('js'));
 	});
 
-	'use strict';
 
 gulp.task('Sass', function () { 
 	return gulp.src('./Sass/**/*.scss')
