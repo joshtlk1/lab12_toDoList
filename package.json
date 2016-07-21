@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Josh\"",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeadHedge/lab10.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeadHedge/lab10/issues"
+  },
+  "homepage": "https://github.com/DeadHedge/lab10#readme",
+  "description": ""
+}

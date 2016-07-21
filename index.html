@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List!</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body ng-app="toDoListModule">
+	<div ng-controller="toDoListController">
+		<input type="text" ng-model="chore">
+		
+		<button type="button" ng-click="addChore()"><img src="http://www.procliparts.com/resize/900w/cliparts/pele/tqgczgcr9-check-circle.png"></button>
+
+		<ul>
+			<li type="a" ng-repeat="add in toDoList | filter:filter">{{add}}</li>
+		</ul>
+
+		 <input type="text" ng-model="filter" placeholder="filter to do list">
+
+	</div>
+	
+
+
+
+
+	<!-- Angular CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<!-- controller.js -->
+	<script src="controller.js"></script>
+</body>
+</html>
